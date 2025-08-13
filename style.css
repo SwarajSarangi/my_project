@@ -1,114 +1,105 @@
-*{margin: 0; padding: 0;}
-body{
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
     font-family: 'Poppins', sans-serif;
 }
-.back-top{
+
+.back-top {
     position: fixed;
     bottom: 15px;
     right: 15px;
     font-size: 25px;
-    width: 40px; height: 40px;
+    width: 40px;
+    height: 40px;
     background-color: #333;
     color: #ddd;
     border-radius: 50%;
     text-align: center;
 }
-.logo-text{
+
+/* Logo text - bigger SWARNAM and Elevator */
+.logo-text {
     font-size: 40px;
     font-family: 'Berkshire Swash', cursive;
 }
-.logo-dot{
-    font-size: 40px;
-    margin-left: 3px;
-    color: #4eda4e;
+
+/* Removed green dot entirely */
+.logo-dot {
+    display: none;
 }
-.primary-color{
+
+.primary-color {
     background-color: #333;
 }
-.single-shop{
+
+.single-shop {
     background-color: #555;
 }
-img{
+
+img {
     transition: .5s;
 }
-img:hover{
+
+img:hover {
     transform: scale(1.05);
 }
-.client-section{
+
+.client-section {
     background-color: #333;
 }
-.single-card{
+
+.single-card {
     background-color: #555;
 }
-#features{
+
+#features {
     background-color: #f8f8f8;
 }
-.slider-img{
+
+.slider-img {
     height: 85vh;
     background-image: url(images/lift-hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
-.slide-wrap{
-    width: 60%;
-}
-.slide-details{
-    color: #ddd;
-}
-.about-section{
-    background-color: #0D0925;
-    color: white;
-}
-.small-border-p::after, .small-border::after{
-    content: "";
-    background-color: rgba(231, 111, 81, 0.5);
-    width: 100px;
-    height: 2px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-.text-color{
-    color: #E76F51;
-}
-
-/* Hero text colors */
-.hero-subtitle {
-    color: #222 !important; /* dark grey */
-    font-size: 1.2rem;
-    font-weight: 500;
-}
-.hero-title {
-    color: #111 !important; /* almost black */
-}
-.hero-desc {
-    color: #333 !important;
-}
-
-/* Optional: add light overlay behind text for better contrast */
-.slider-img {
     position: relative;
 }
+
+/* Light overlay behind hero text */
 .slider-img::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(255, 255, 255, 0.6); /* semi-transparent white layer */
+    background: rgba(255, 255, 255, 0.6);
     z-index: 1;
 }
+
 .slide-wrap {
+    width: 60%;
     position: relative;
-    z-index: 2; /* make sure text is above overlay */
+    z-index: 2;
 }
 
-/* Uniform image sizing */
-.uniform-img {
-    width: 100%;
-    height: 300px; /* adjust height if needed */
-    object-fit: cover; /* crop to fit without distortion */
-    border-radius: 8px; /* optional */
+.slide-details {
+    color: #ddd;
+}
+
+.about-section {
+    background-color: #0D0925;
+    color: white;
+}
+
+/* REMOVE decorative lines globally */
+.small-border-p::after,
+.small-border::after {
+    content: none !important;
+}
+
+.text-color {
+    color: #E76F51;
 }
 
 /* Hero text colors */
@@ -123,17 +114,13 @@ img:hover{
 .hero-desc {
     color: #333 !important;
 }
-.slider-img {
-    position: relative;
+
+/* Uniform image sizing */
+.uniform-img {
+    width: 100%;
+    height: 300px; /* adjust as needed */
+    object-fit: cover;
+    border-radius: 8px;
 }
-.slider-img::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(255, 255, 255, 0.6); /* light overlay */
-    z-index: 1;
-}
-.slide-wrap {
-    position: relative;
-    z-index: 2;
-}
+
+
